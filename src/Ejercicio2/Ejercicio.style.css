@@ -1,0 +1,22 @@
+.Ejercicio2__button--buttonAdd{
+ border: 1px solid black;
+ background-color: white;
+ border-radius: 5px;
+ padding:2px;
+}
+.Ejercicio2__button--buttonLess{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding:2px;
+   }
+.Ejercicio2__div--botones{
+    display:flex;
+    gap:20px;
+}
+@media screen and (max-width:200px) {
+    .Ejercicio2__div--botones{
+        display:flex;
+        flex-direction:column; 
+    }
+}

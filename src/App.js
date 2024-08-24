@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Ejercicio2 from './Ejercicio2/Ejercicio2';
+import RoutesExercise2 from './RoutesExercise2/RoutesExercise2';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () =>{
   return (
    <div>
-      <Ejercicio2 />
+       <BrowserRouter>
+       <RoutesExercise2 />
+       </BrowserRouter>
+     
    </div>
   );
 }
