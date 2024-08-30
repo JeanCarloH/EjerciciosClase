@@ -9,6 +9,10 @@ import CatImage from '../CatImage/CatImage';
 import ApiGitHUb from '../ApiGitHub/ApiGitHub';
 import NotFound from '../NotFound/NotFound';
 import Formulario from '../Formulario/Formulario';
+import LocalStorage from '../LocalStorage/LocalStorage';
+import SharePropsDad from '../ShareProps/SharePropsDad';
+import ParentComponent from '../ExerciseFinal/ParentComponent';
+import ChildComponent from '../ExerciseFinal/ChildComponent';
 
 const RoutesExercise2 = () => {
     return (
@@ -22,6 +26,10 @@ const RoutesExercise2 = () => {
             <Route path="/catImage" element ={<CatImage/>}  exact/>
             <Route path="/apiGit" element ={<ApiGitHUb/>}  exact/>
             <Route path="/formulario" element ={<Formulario/>}  exact/>
+            <Route path="/localStorage" element ={<LocalStorage/>}  exact/>
+            <Route path="/shareProps" element ={<SharePropsDad/>}  exact/>
+            <Route path="/exerciseFinal" element ={<ParentComponent/>}  exact/>
+            <Route path="/exerciseFinal/child" element ={<ChildComponent/>}  exact/>
             <Route path="*" element ={<NotFound/>} />
         </Routes>
         </>
