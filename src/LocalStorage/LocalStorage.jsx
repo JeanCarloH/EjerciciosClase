@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 const LocalStorage = () => {
     // usar el slice para guardar el contador en el local storage
     const dispatch = useDispatch();
-    const {value} = useSelector((state) => state.contadorSlice);
+    const {value} = useSelector((state) => state.contadorSlice); //asi traemos el valor
     const [contador, setContador] = useState(0);
  // asi modifico los valores de los metodos
     const handleIncrementar  = () => {
@@ -26,7 +26,7 @@ const LocalStorage = () => {
     , [value]);
 useEffect(() => {
     console.log("soy el valor de contadorRedux",value);
-    dispatch(setValue(value));
+    dispatch(setValue(value));  //asi guardamos el valor en el slice usando redoxtoolkit
 }
 , [value]);
     return (

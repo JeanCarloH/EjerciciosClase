@@ -13,7 +13,8 @@ import LocalStorage from '../LocalStorage/LocalStorage';
 import SharePropsDad from '../ShareProps/SharePropsDad';
 import ParentComponent from '../ExerciseFinal/ParentComponent';
 import ChildComponent from '../ExerciseFinal/ChildComponent';
-
+import DeckOfCardsApi from '../DeckOfCardsApi/DeckOfCardsApi';
+import OpenTriviaDatabase from '../OpenTriviaDatabase/OpenTriviaDatabase';
 const RoutesExercise2 = () => {
     return (
         <>
@@ -30,6 +31,8 @@ const RoutesExercise2 = () => {
             <Route path="/shareProps" element ={<SharePropsDad/>}  exact/>
             <Route path="/exerciseFinal" element ={<ParentComponent/>}  exact/>
             <Route path="/exerciseFinal/child" element ={<ChildComponent/>}  exact/>
+            <Route path="/deckOfCardsApi" element ={<DeckOfCardsApi/>}  exact/>
+            <Route path="/openTriviaDatabase" element ={<OpenTriviaDatabase/>}  exact/>
             <Route path="*" element ={<NotFound/>} />
         </Routes>
         </>
